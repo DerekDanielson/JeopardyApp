@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jeopardy</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="app">
+    
+        <!--Top Section-->
+        <header class="top-header">
+            <h1>Jeopardy</h1>
+            <p class="score">Score <span class="score-count"></span></p>
+        </header>
+
+        <!--Board container-->    
+        <div class="board">
+            <!--Categories go here-->
+        </div>
+
+        <!--Container for card prompt-->
+        <div class="card-modal">
+            <div class="card-modal-inner">
+                <h2 class="clue-text"></h2> <!--Clue goes here-->
+                <form autocomplete="off">
+                    <input name="user-answer" type="text" />
+                    <button type="submit">Answer</button>
+                </form>
+
+                <div class="result">
+                    <p class="result_success">Correct</p>
+                    <p class="result_fail">Incorrect</p>
+                    <p class="result_correct-answer">Correct answer is 
+                        <span class="result_correct-answer-text"><!--Correct answer goes here-->
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="app1.js"></script>
+</body>
+</html>
